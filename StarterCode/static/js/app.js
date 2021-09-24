@@ -7,7 +7,7 @@ function menu() {
 
     // Pull Data from JSON
 
-    d3.json("samples.json").then((data) => {
+    d3.json("StarterCode/samples.json").then((data) => {
         console.log(data);
     
 
@@ -26,7 +26,7 @@ function menu() {
 
 // Metadata Function:
 function metadata(x) {
-  d3.json("samples.json").then((data) => {
+  d3.json("StarterCode/samples.json").then((data) => {
     
     // Data for MetaData 
     let subject_demos = data.metadata;
@@ -52,7 +52,7 @@ function metadata(x) {
 
 function charts(x) {
 
- d3.json("samples.json").then((data) => { 
+ d3.json("StarterCode/samples.json").then((data) => { 
     
     // Data from Samples
     let samples = data.samples;
